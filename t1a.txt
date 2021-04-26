@@ -1,0 +1,13 @@
+loop:
+	addi $t2, $s1, -995
+	sw $t2, 4($s0)
+	lw $t5, 4($s0)
+	add $t6, $t5, $s0
+	j exit
+
+main:
+	addi $s0, $zero, 1000
+	addi $s1, $s0, 1000
+	lw $t1, 0($s0)
+	j loop
+exit:

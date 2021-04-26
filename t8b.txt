@@ -1,0 +1,16 @@
+main:
+
+addi $s0, $zero, 1000
+sw $s0, 0($s0)
+
+abc:
+
+lw $t2, 0($s0)
+
+beq $t2, $t1, abc
+
+lw $t3, 0($s0)
+
+beq $t2, $t3, main
+
+exit:

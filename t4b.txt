@@ -1,0 +1,6 @@
+main: 
+
+addi $s0, $zero, 1000
+mul $s1, $s0, 3
+lw $t1, 40($s1)
+addi $s5, $zero, 8
